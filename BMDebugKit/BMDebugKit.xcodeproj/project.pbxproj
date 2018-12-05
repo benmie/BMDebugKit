@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0930651521B835D7004CEA28 /* BMDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0930651321B835D7004CEA28 /* BMDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0930651C21B83636004CEA28 /* BMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930651B21B83636004CEA28 /* BMLogger.swift */; };
+		0930652021B836BF004CEA28 /* NSObject+BMDebugDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930651E21B836BF004CEA28 /* NSObject+BMDebugDescription.swift */; };
+		0930652121B836BF004CEA28 /* UIViewController+BMLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930651F21B836BF004CEA28 /* UIViewController+BMLogging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		0930651321B835D7004CEA28 /* BMDebugKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDebugKit.h; sourceTree = "<group>"; };
 		0930651421B835D7004CEA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0930651B21B83636004CEA28 /* BMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLogger.swift; sourceTree = "<group>"; };
+		0930651E21B836BF004CEA28 /* NSObject+BMDebugDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+BMDebugDescription.swift"; sourceTree = "<group>"; };
+		0930651F21B836BF004CEA28 /* UIViewController+BMLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BMLogging.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +52,21 @@
 		0930651221B835D7004CEA28 /* BMDebugKit */ = {
 			isa = PBXGroup;
 			children = (
+				0930651D21B8369B004CEA28 /* Extensions */,
 				0930651321B835D7004CEA28 /* BMDebugKit.h */,
 				0930651421B835D7004CEA28 /* Info.plist */,
 				0930651B21B83636004CEA28 /* BMLogger.swift */,
 			);
 			path = BMDebugKit;
+			sourceTree = "<group>";
+		};
+		0930651D21B8369B004CEA28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0930651E21B836BF004CEA28 /* NSObject+BMDebugDescription.swift */,
+				0930651F21B836BF004CEA28 /* UIViewController+BMLogging.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0930652121B836BF004CEA28 /* UIViewController+BMLogging.swift in Sources */,
+				0930652021B836BF004CEA28 /* NSObject+BMDebugDescription.swift in Sources */,
 				0930651C21B83636004CEA28 /* BMLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
