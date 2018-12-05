@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0930651521B835D7004CEA28 /* BMDebugKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0930651321B835D7004CEA28 /* BMDebugKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0930651C21B83636004CEA28 /* BMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930651B21B83636004CEA28 /* BMLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0930651021B835D7004CEA28 /* BMDebugKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMDebugKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0930651321B835D7004CEA28 /* BMDebugKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDebugKit.h; sourceTree = "<group>"; };
 		0930651421B835D7004CEA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0930651B21B83636004CEA28 /* BMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0930651321B835D7004CEA28 /* BMDebugKit.h */,
 				0930651421B835D7004CEA28 /* Info.plist */,
+				0930651B21B83636004CEA28 /* BMLogger.swift */,
 			);
 			path = BMDebugKit;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					0930650F21B835D7004CEA28 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0930651C21B83636004CEA28 /* BMLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		0930651921B835D7004CEA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.bemi.BMDebugKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		0930651A21B835D7004CEA28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
